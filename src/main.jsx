@@ -20,12 +20,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    errorElement:<Error_page></Error_page>,
+    // errorElement:<Error_page></Error_page>,
     children:[
       {
         path:"/",
         element:<Home></Home>,
-        loader:()=>fetch('http://localhost:5000/chefRecipes'),
+        loader:()=>fetch('https://bangladeshi-chef-recipe-server-for-us-mdraselislam1944.vercel.app/chefRecipes'),
       },
       {
         path:"/login",
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path:'/chefRecipe/:id',
         element:<ChefRecipes></ChefRecipes>,
-        loader:({params})=>fetch(`http://localhost:5000/chefRecipes/${params.id}`)
+        loader:({params})=>fetch(`https://bangladeshi-chef-recipe-server-for-us-mdraselislam1944.vercel.app/chefRecipes/${params.id}`)
       }
     ]},
 ]);

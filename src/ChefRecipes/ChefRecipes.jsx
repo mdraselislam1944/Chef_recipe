@@ -26,7 +26,7 @@ const ChefRecipes = () => {
   const [recipeData,SetRecipeData]=useState();
  let  filteredData;
   useEffect(() => {
-    fetch("http://localhost:5000/recipes")
+    fetch("http://bangladeshi-chef-recipe-server-for-us-mdraselislam1944.vercel.app/recipes")
       .then((res) => res.json())
       .then((data) => setRecipe(data));
   }, []);

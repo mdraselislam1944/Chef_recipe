@@ -54,9 +54,6 @@ const LogIn = () => {
                 <input className='py-2 px-5 my-2' type="password" name="password" id="password" required placeholder='Enter Password'/><br/>
                 <input className='btn btn-secondary' type="submit" value="submit" />
                </form>
-               {
-                use1?<Link to='/'>{use1}</Link>:<h3>{use1}</h3>
-               }
                 </div>
                 <div>
                 <div className='my-3'>
@@ -78,3 +75,24 @@ const LogIn = () => {
 };
 
 export default LogIn; 
+
+
+// https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-mdraselislam1944/tree/main/bangladeshi-chef-recipe-client
+
+// https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-mdraselislam1944
+
+// Clinet site, firebase এ Deploy এর জন্য নিচের স্টেপগুলো ফলো করুন -
+// firebase deploy ⤵️
+//  => npm uninstall -g firebase-tools
+// => npm install -g firebase-tools
+// => firebase login
+// => firebase init
+
+// =>[Select]  Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys  
+// => pubic directory : dist 
+// => index.html : y
+// => deploy with github : n
+// ******************
+// => npm run build 
+// => firebase deploy
+// *****************

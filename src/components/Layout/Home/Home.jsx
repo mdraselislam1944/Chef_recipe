@@ -13,7 +13,7 @@ const Home = () => {
     const chefRecipes=useLoaderData();
     const [favoriteRecipe,setFavoriteRecipe]=useState();
     useEffect(()=>{
-        fetch('http://localhost:5000/favoriteRecipe')
+        fetch('https://bangladeshi-chef-recipe-server-for-us-mdraselislam1944.vercel.app/favoriteRecipe')
         .then(res=>res.json())
         .then(data=>setFavoriteRecipe(data));
     },[])
